@@ -28,7 +28,7 @@
   font-family: "Roboto", sans-serif;
 }
 .social {
-  margin-top: 20px;
+  margin: 20px;
   font-size: 25px;
   color: white;
   display: flex;
@@ -53,8 +53,10 @@
 .nav span {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: wheat;
+  font-weight: 100;
+  padding: 15px;
 }
 .side ul li a:hover {
   color: aqua;
@@ -435,6 +437,13 @@ box {
   line-height: 25px;
 }
 /*portfolio*/
+.portfolio {
+  background-color: rgba(137, 43, 226, 0.114);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
 .portfolio h2 {
   color: rgb(7, 83, 248);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -446,11 +455,209 @@ box {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 10px;
-  margin-left: 30px;
-  width: 90%;
   font-size: 20px;
 }
-.categories a {
+.okjuhg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.categories:hover {
+  background-color: white;
+  box-shadow: 6px 6px 6px 0px rgba(24, 24, 24, 0.871);
+  transition: 0.4s ease;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  gap: 12px;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+}
+.projects a {
+  margin-bottom: 15px;
+}
+.project a:hover {
+  transition: 0.4s;
+  box-shadow: 6px 6px 0px 0px rgba(6, 234, 255, 0.871);
+}
+/*SERVEICE*/
+.service {
+  padding: 30px;
+}
+.service h2 {
+  margin-bottom: 15px;
+  color: rgb(7, 83, 248);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.servicep {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: 20px;
+}
+.service1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.service1 ion-icon {
+  font-size: 30px;
+  color: white;
   box-sizing: border-box;
-  background-color: rgba(137, 43, 226, 0.114);
+  background-color: rgba(31, 202, 221, 0.936);
+  padding: 15px;
+  border-radius: 35px;
+}
+.service1 ion-icon:hover {
+  font-size: 30px;
+  color: rgba(31, 202, 221, 0.936);
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid rgba(31, 202, 221, 0.936);
+  padding: 15px;
+  border-radius: 35px;
+  transition: 0.9s ease;
+}
+.service1 span h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 90px;
+  margin-top: -60px;
+}
+.service1 span h3:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: rgba(31, 202, 221, 0.936);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 90px;
+  margin-top: -60px;
+}
+.serviceinfo p {
+  padding-top: 20px;
+  padding-left: 90px;
+  width: 300px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.Testimonial {
+  padding: 30px;
+  background-color: rgba(0, 0, 255, 0.049);
+}
+.Testimonial h2 {
+  margin-bottom: 15px;
+  color: rgb(7, 83, 248);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Testimonial p {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background-color: rgba(0, 0, 255, 0.049);
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.mySlides img {
+  display: flex;
+  margin-left: 44%;
+  margin-bottom: 30px;
+  border-radius: 100px;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: rgb(246, 8, 8);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: rgb(4, 251, 206);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
 }

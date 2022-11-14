@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="menunav">
+        <div class="logonav">
+          <a href="index.html"><img src="rohanlogo.png" /></a>
+        </div>
+        <input type="checkbox" name="" id="responsize_menu" />
+        <label for="responsize_menu"></label>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="rohanpoudel88@gmail.com">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="service">
+      <h2>Services</h2>
+      <p class="servicep">
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+      <div class="service1">
+        <div class="serviceinfo">
+          <span
+            ><ion-icon name="briefcase-outline"></ion-icon>
+            <h3>Lorem Ipsum</h3></span
+          >
+          <p>
+            Voluptatum deleniti atque corrupti quos dolores et quas molestias
+            excepturi sint occaecati cupiditate non provident
+          </p>
+        </div>
+        <div class="serviceinfo">
+          <span>
+            <ion-icon name="book-outline"></ion-icon>
+            <h3>Dolor Sitema</h3></span
+          >
+          <p>
+            Voluptatum deleniti atque corrupti quos dolores et quas molestias
+            excepturi sint occaecati cupiditate non provident
+          </p>
+        </div>
+        <div class="serviceinfo">
+          <span
+            ><ion-icon name="stats-chart-outline"></ion-icon>
+            <h3>Sed ut perspiciatis</h3></span
+          >
+          <p>
+            Voluptatum deleniti atque corrupti quos dolores et quas molestias
+            excepturi sint occaecati cupiditate non provident
+          </p>
+        </div>
+      </div>
+      <div class="service1">
+        <div class="serviceinfo">
+          <span
+            ><ion-icon name="stop-circle-outline"></ion-icon>
+            <h3>Magni Dolores</h3></span
+          >
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+        <div class="serviceinfo">
+          <span>
+            <ion-icon name="sunny-outline"></ion-icon>
+            <h3>Nemo Enim</h3></span
+          >
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque
+          </p>
+        </div>
+        <div class="serviceinfo">
+          <span
+            ><ion-icon name="calendar-outline"></ion-icon>
+            <h3>Eiusmod Tempor</h3></span
+          >
+          <p>
+            Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+            tempore, cum soluta nobis est eligendi
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="Testimonial">
+      <h2>Testimonials</h2>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="profile-img.jpg" width="200px" />
+        <q
+          >I love you the more in that I believe you had liked me for my own
+          sake and for nothing else</q
+        >
+        <p class="author">- Alex Smith</p>
+      </div>
+
+      <div class="mySlides">
+        <img src="ronaldo.png" width="200px" />
+        <q
+          >I see myself as the best footballer in the world. If you don't
+          believe you are the best, then you will never achieve all that you are
+          capable of.</q
+        >
+        <p class="author">- Ronaldo</p>
+      </div>
+
+      <div class="mySlides">
+        <img src="chris1.jpg" width="200px" />
+        <q
+          >I’m busier than I’ve ever been, but you can go through the lists of
+          people who are bang up there one minute, and then just disappear.</q
+        >
+        <p class="author">- Chris</p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
