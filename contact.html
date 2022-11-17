@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="menunav">
+        <div class="logonav">
+          <a href="index.html"><img src="rohanlogo.png" /></a>
+        </div>
+        <input type="checkbox" name="" id="responsize_menu" />
+        <label for="responsize_menu"></label>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact-head">
+      <h2>Contact</h2>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+    </div>
+    <div class="contact">
+      <div class="contact-info">
+        <div class="touch">
+          <ion-icon name="location-outline"></ion-icon>
+
+          <p>
+            Location:<br />
+            Biratnagar-3 , Morang
+          </p>
+        </div>
+        <div class="touch">
+          <ion-icon name="mail-outline"></ion-icon>
+
+          <p>
+            Email:<br />
+            rohanpoudel88@gmail.com
+          </p>
+        </div>
+        <div class="touch">
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+          <p>
+            Phone:<br />
+            9842600000
+          </p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2105.8795712943856!2d87.28384894483351!3d26.50482871716708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef73ec8dcaa737%3A0xeae2a3701d7f0b59!2zMjbCsDMwJzE2LjQiTiA4N8KwMTcnMDEuNSJF!5e0!3m2!1sen!2snp!4v1668655510849!5m2!1sen!2snp"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-form">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="country">Country</label>
+          <input
+            type="text"
+            id="lname"
+            name="Country"
+            placeholder="Your Country name"
+          />
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
